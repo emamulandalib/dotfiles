@@ -132,3 +132,11 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"
+
+# Wasmer
+export WASMER_DIR="/Users/andalib/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
