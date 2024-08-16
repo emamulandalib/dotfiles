@@ -113,7 +113,8 @@ alias cat="bat"
 alias cd="z"
 eval "$(zoxide init zsh)"
 
-export FZF_DEFAULT_COMMAND="fd --type f"
+export FZF_DEFAULT_COMMAND='fd --type file'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
@@ -130,7 +131,7 @@ export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
-  eval "$(fzf --zsh)"
+eval "$(fzf --zsh)"
 
 export WASMTIME_HOME="$HOME/.wasmtime"
 
