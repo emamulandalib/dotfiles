@@ -167,3 +167,6 @@ rfv() (
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
+
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
