@@ -46,5 +46,6 @@ end
 
 table.insert(plugins, { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" })
 table.insert(plugins, { import = "astrocommunity.colorscheme.tokyonight-nvim" })
+table.insert(plugins, { import = "astrocommunity.indent.mini-indentscope" })
 
 return plugins
