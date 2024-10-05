@@ -2,14 +2,14 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
--- config.font = wezterm.font("JetBrains Mono")
-config.font = wezterm.font_with_fallback({
-	{
-		family = "Monaspace Neon",
-		{ weight = "Bold", italic = true },
-		harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "calt", "dlig" },
-	},
-})
+config.font = wezterm.font("MonoLisa Trial")
+-- config.font = wezterm.font_with_fallback({
+-- 	{
+-- 		family = "Monaspace Neon",
+-- 		{ weight = 'Bold', italic = true },
+-- 		harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "calt", "dlig" },
+-- 	},
+-- })
 config.font_size = 16
 config.enable_tab_bar = false
 config.initial_cols = 110
