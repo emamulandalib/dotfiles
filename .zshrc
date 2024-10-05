@@ -168,3 +168,4 @@ autoload -Uz compinit && compinit
 
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
+eval "$(~/.local/bin/mise activate zsh)"
