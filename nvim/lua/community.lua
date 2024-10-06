@@ -39,13 +39,18 @@ end
 table.insert(plugins, { import = "astrocommunity.remote-development.distant-nvim" })
 
 -- Scrolling
-local scrolling_plugins = { "mini-animate", "satellite-nvim" }
+local scrolling_plugins = { "mini-animate" }
 for _, scrolling_plugin in ipairs(scrolling_plugins) do
   table.insert(plugins, { import = "astrocommunity.scrolling." .. scrolling_plugin })
 end
 
+-- Recipes
+table.insert(plugins, { import = "astrocommunity.recipes.neovide" })
+
+-- Random
 table.insert(plugins, { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" })
 table.insert(plugins, { import = "astrocommunity.colorscheme.tokyonight-nvim" })
 table.insert(plugins, { import = "astrocommunity.indent.mini-indentscope" })
+table.insert(plugins, { import = "astrocommunity.syntax.hlargs-nvim" })
 
 return plugins
