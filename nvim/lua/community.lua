@@ -18,7 +18,6 @@ local programming_languages = {
   "ansible",
   "bash",
   "cmake",
-  "go",
   "docker",
   "json",
   "helm",
@@ -45,7 +44,10 @@ for _, scrolling_plugin in ipairs(scrolling_plugins) do
 end
 
 -- Recipes
-table.insert(plugins, { import = "astrocommunity.recipes.neovide" })
+local recipes = { "neovide", "telescope-nvchad-theme" }
+for _, recipe in ipairs(recipes) do
+  table.insert(plugins, { import = "astrocommunity.recipes." .. recipe })
+end
 
 -- Random
 table.insert(plugins, { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" })

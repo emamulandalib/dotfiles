@@ -5,7 +5,7 @@ local config = wezterm.config_builder()
 config.font = wezterm.font("Maple Mono", {
 	weight = "Medium",
 	italic = false,
-	harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "calt", "dlig" },
+	-- harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "calt", "dlig" },
 })
 -- config.font = wezterm.font(
 -- 	"Monaspace Neon",
