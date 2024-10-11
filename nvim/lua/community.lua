@@ -18,7 +18,6 @@ local programming_languages = {
   "ansible",
   "bash",
   "cmake",
-  "go",
   "docker",
   "json",
   "helm",
