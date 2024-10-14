@@ -50,7 +50,7 @@ for _, recipe in ipairs(recipes) do
 end
 
 -- Motions
-local motions = { "flash" }
+local motions = { "flash-nvim" }
 for _, motion in ipairs(motions) do
   table.insert(plugins, { import = "astrocommunity.motion." .. motion })
 end
