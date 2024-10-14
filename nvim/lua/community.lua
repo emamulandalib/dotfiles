@@ -49,6 +49,12 @@ for _, recipe in ipairs(recipes) do
   table.insert(plugins, { import = "astrocommunity.recipes." .. recipe })
 end
 
+-- Motions
+local motions = { "flash" }
+for _, motion in ipairs(motions) do
+  table.insert(plugins, { import = "astrocommunity.motion." .. motion })
+end
+
 -- Random
 table.insert(plugins, { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" })
 table.insert(plugins, { import = "astrocommunity.colorscheme.tokyonight-nvim" })
