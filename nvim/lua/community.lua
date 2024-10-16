@@ -4,7 +4,6 @@
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
 -- This guarantees that the specs are processed before any user plugins.
 
----@type LazySpec
 local plugins = {
   "AstroNvim/astrocommunity",
 }
@@ -44,13 +43,13 @@ for _, scrolling_plugin in ipairs(scrolling_plugins) do
 end
 
 -- Recipes
-local recipes = { "neovide", "telescope-nvchad-theme" }
+local recipes = { "neovide", "telescope-nvchad-theme", "auto-session-restore" }
 for _, recipe in ipairs(recipes) do
   table.insert(plugins, { import = "astrocommunity.recipes." .. recipe })
 end
 
 -- Motions
-local motions = { "flash-nvim" }
+local motions = { "flash-nvim", "mini-ai", "nvim-surround" }
 for _, motion in ipairs(motions) do
   table.insert(plugins, { import = "astrocommunity.motion." .. motion })
 end
