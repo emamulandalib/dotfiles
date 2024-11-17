@@ -54,9 +54,14 @@ for _, motion in ipairs(motions) do
   table.insert(plugins, { import = "astrocommunity.motion." .. motion })
 end
 
+-- Color Scheme
+local clrschms = { "tokyonight-nvim", "github-nvim-theme", "nightfox-nvim", "tokyodark-nvim" }
+for _, clrschm in ipairs(clrschms) do
+  table.insert(plugins, { import = "astrocommunity.colorscheme." .. clrschm })
+end
+
 -- Random
 table.insert(plugins, { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" })
-table.insert(plugins, { import = "astrocommunity.colorscheme.tokyonight-nvim" })
 table.insert(plugins, { import = "astrocommunity.indent.mini-indentscope" })
 table.insert(plugins, { import = "astrocommunity.syntax.hlargs-nvim" })
 table.insert(plugins, { import = "astrocommunity.completion.copilot-lua" })
