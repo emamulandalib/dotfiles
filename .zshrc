@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/andalib/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -169,3 +169,6 @@ autoload -Uz compinit && compinit
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
 eval "$(~/.local/bin/mise activate zsh)"
+
+
+[ -f "/Users/andalib/.ghcup/env" ] && . "/Users/andalib/.ghcup/env" # ghcup-env
