@@ -111,7 +111,6 @@ alias ls="eza --color=always --long --git --icons=always"
 alias cat="bat"
 
 alias cd="z"
-eval "$(zoxide init zsh)"
 
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -131,7 +130,7 @@ export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
-eval "$(fzf --zsh)"
+# eval "$(fzf --zsh)"
 
 export WASMTIME_HOME="$HOME/.wasmtime"
 
@@ -172,3 +171,4 @@ eval "$(~/.local/bin/mise activate zsh)"
 
 
 [ -f "/Users/andalib/.ghcup/env" ] && . "/Users/andalib/.ghcup/env" # ghcup-env
+eval "$(zoxide init zsh)"

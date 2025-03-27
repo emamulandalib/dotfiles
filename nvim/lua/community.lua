@@ -55,7 +55,7 @@ for _, motion in ipairs(motions) do
 end
 
 -- Color Scheme
-local clrschms = { "tokyonight-nvim", "github-nvim-theme", "nightfox-nvim", "tokyodark-nvim" }
+local clrschms = { "tokyonight-nvim", "github-nvim-theme", "nightfox-nvim", "tokyodark-nvim", "mini-base16" }
 for _, clrschm in ipairs(clrschms) do
   table.insert(plugins, { import = "astrocommunity.colorscheme." .. clrschm })
 end
