@@ -64,5 +64,6 @@ end
 table.insert(plugins, { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" })
 table.insert(plugins, { import = "astrocommunity.indent.mini-indentscope" })
 table.insert(plugins, { import = "astrocommunity.syntax.hlargs-nvim" })
+table.insert(plugins, { import = "astrocommunity.editing-support.auto-save-nvim" })
 
 return plugins
