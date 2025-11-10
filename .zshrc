@@ -23,3 +23,6 @@ source <(fzf --zsh)
 export PATH="$PATH:/Users/eandalib/.lmstudio/bin"
 # End of LM Studio CLI section
 alias ssh='TERM=screen-256color ssh'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
