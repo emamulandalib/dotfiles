@@ -1,15 +1,13 @@
 return {
   {
-    "rockyzhang24/arctic.nvim",
-    branch = "v2",
-    dependencies = { "rktjmp/lush.nvim" },
+    "RRethy/base16-nvim",
   },
 
-  -- Configure LazyVim to load gruvbox
+  -- Configure LazyVim to load base16 classic dark
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "arctic",
+      colorscheme = "base16-classic-dark",
     },
   },
 
